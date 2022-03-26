@@ -13,11 +13,11 @@ const Product = () => {
                     </Typography>
                     <Typography variant='h5'>
                         {}
-                    </Typography>
-                </div>
+                    </Typography> 
+                </div> 
             </CardContent>
         </Card>
-  )
+  ) // more changes to be added to this e-commerce code on vsc
 }
 
 export default Product
