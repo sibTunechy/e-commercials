@@ -17,8 +17,7 @@ const Product = () => {
                 </div> 
             </CardContent>
         </Card>
-  ) // more changes to be added to this e-commerce code on vsc
-    // completing this project to start another one right after is necessary.
+  ) 
 }
 
 export default Product
