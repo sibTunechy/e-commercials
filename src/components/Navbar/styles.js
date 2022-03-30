@@ -4,6 +4,6 @@ const  drawerWidth = 0;
 
 export default makeStyles((theme) => ({
     appBar: {
-        
+
     }
-}))
+})) // more styles here to design the already structured Navbar.....
