@@ -5,19 +5,19 @@ import { Products, Navbar } from './components';
 
 
 const App = () => {
-  // const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState([]);
 
-  // const fetchProducts = async () => {
-  //   const { data } = await commerce.products.list();
+  const fetchProducts = async () => {
+    const { data } = await commerce.products.list();
 
-  //   setProducts(data);
-  // }
+    setProducts(data);
+  }
 
-  // useEffect(() => {
-  //   fetchProducts();
-  // }, []);  // this useEffect has a dependency array set to empty which means its only going to run at the start of the render.
+  useEffect(() => {
+    fetchProducts();
+  }, []);  // this useEffect has a dependency array set to empty which means its only going to run at the start of the render.
 
-  // console.log(products);
+  console.log(products);
 
   return (
     <div>
