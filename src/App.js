@@ -10,19 +10,18 @@ const App = () => {
   const fetchProducts = async () => {
     const { data } = await commerce.products.list();
 
-    setProducts(data); // this displays now that i have fixed the public key in .env folder
+    setProducts(data); 
   }
 
   useEffect(() => {
     fetchProducts();
   }, []);  // this useEffect has a dependency array set to empty which means its only going to run at the start of the render.
 
-  console.log(products);
 
   return (
     <div>
         <Navbar/>
-        <Products/>
+        <Products products={products} />
     </div>
   )
 }
