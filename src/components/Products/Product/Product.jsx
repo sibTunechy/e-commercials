@@ -8,7 +8,7 @@ const Product = ({ product }) => {
 
     //  console.log(product)
 
-    // return<div>test</div>
+    // return<div>test</div> // i should comment this out
 
   return (
         <Card className={classes.root}>
